@@ -10,7 +10,7 @@ customers <- filter(Xl, ProductId == "AAMI TIR12:2010 (AAMI TIR 12:2010)") #inpu
 
 CreateOtherStandards <- function(){
   total_orders <- data.frame(OrderNumber = character())
-  other_ordered_standards <- data.frame(Owner_GUID = character(), rderNumber = character(), ProductId = character())
+  other_ordered_standards <- data.frame(Owner_GUID = character(), OrderNumber = character(), ProductId = character())
   for(orders in 1:nrow(customers)){
     order_id <- customers[orders,]$OrderNumber
     temp <- filter(xl, OrderNumber == order_id)
