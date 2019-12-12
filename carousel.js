@@ -1,3 +1,4 @@
+//https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_js_carousel_js
 var bootstrap_link = document.createElement("link");
 bootstrap_link["rel"] = "stylesheet";
 bootstrap_link["href"] = "https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css";
@@ -28,3 +29,70 @@ head.appendChild(script_popper);
 head.appendChild(script_bootstrap);
 head.appendChild(css_element);
 
+var container = document.createElement("div");
+container.className = "container mt-3";
+
+var indicators = document.createElement("ul");
+indicators.className = "carousel-indicators";
+var item1 = document.createElement("li");
+item1.className = "item1 active";
+indicators.appendChild(item1);
+var item2 = document.createElement("li");
+item2.className = "item2";
+indicators.appendChild(item2);
+var item3 = document.createElement("li");
+item3.className = "item3";
+indicators.appendChild(item3);
+container.appendChild(indicators);
+
+var carousel_inner = document.createElement("div");
+var standard1 = document.createElement("div");
+var standard2 = document.createElement("div");
+var standard3 = document.createElement("div");
+carousel_inner.appendChild(standard1);
+carousel_inner.appendChild(standard2);
+carousel_inner.appendChild(standard3);
+container.appendChild(carousel_inner);
+
+var prev_button = document.createElement("a");
+prev_button.className = "carousel-control-prev";
+prev_button["href"] = "#myCarousel";
+var prev_span = document.createElement("span");
+prev_span.className = "carousel-control-prev-icon";
+prev_button.appendChild(prev_span);
+container.appendChild(prev_button);
+
+var next_button = document.createElement("a");
+next_button.className = "carousel-control-next";
+next_button["href"] = "#myCarousel";
+var next_span = document.createElement("span");
+next_button.className = "carousel-control-next-icon";
+next_button.appendChild(next_span);
+container.appendChild(next_button);
+
+$(document).ready(function(){
+  // Activate Carousel
+  $("#myCarousel").carousel();
+    
+  // Enable Carousel Indicators
+  $(".item1").click(function(){
+    $("#myCarousel").carousel(0);
+  });
+  $(".item2").click(function(){
+    $("#myCarousel").carousel(1);
+  });
+  $(".item3").click(function(){
+    $("#myCarousel").carousel(2);
+  });
+    
+  // Enable Carousel Controls
+  $(".carousel-control-prev").click(function(){
+    $("#myCarousel").carousel("prev");
+  });
+  $(".carousel-control-next").click(function(){
+    $("#myCarousel").carousel("next");
+  });
+});
+
+var target_location = document.getElementsByClassName("col-lg-7 g-mb-20 g-pr-0");
+target_location[0].appendChild(container);
