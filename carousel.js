@@ -37,42 +37,50 @@ function RelatedStandards(){
 	//carousel container
 	var container = document.createElement("div");
 	container.className = "css-reset container mt-3";
-	var indicators = document.createElement("ul");
+	// var indicators = document.createElement("ul");
+	var indicators = document.createElement("h5");
 	indicators.appendChild(document.createTextNode('Other Users Also Bought'));
-	indicators.className = "carousel-indicators";
+	// indicators.className = "carousel-indicators";
 
 	//carousel buttons
-	var item1 = document.createElement("li");
-	item1.className = "item1 black active";
-	indicators.appendChild(item1);
-	var item2 = document.createElement("li");
-	item2.className = "item2 black";
-	indicators.appendChild(item2);
-	var item3 = document.createElement("li");
-	item3.className = "item3 black";
-	indicators.appendChild(item3);
+	// var item1 = document.createElement("li");
+	// item1.className = "item1 black active";
+	// indicators.appendChild(item1);
+	// var item2 = document.createElement("li");
+	// item2.className = "item2 black";
+	// indicators.appendChild(item2);
+	// var item3 = document.createElement("li");
+	// item3.className = "item3 black";
+	// indicators.appendChild(item3);
 	container.appendChild(indicators);
 
 	//carousel content
 	var carousel_inner = document.createElement("div");
 	var standard1 = document.createElement("div");
-	standard1.appendChild(document.createTextNode('AAMI TIR30:2011 (AAMI TIR 30:2011)'));
-	standard1["href"] = "https://webstore.ansi.org/Standards/AAMI/AAMITIR302011TIR30";
-	standard1.className = "gray-bg";
-	standard1.width = "1100";
-	standard1.height = "500";
+	var standard1_text = document.createElement("a");
+	standard1_text.appendChild(document.createTextNode('AAMI TIR30:2011 (AAMI TIR 30:2011)'));
+	standard1_text["href"] = "https://webstore.ansi.org/Standards/AAMI/AAMITIR302011TIR30";
+	standard1.appendChild(standard1_text);
+	standard1.setAttribute("href", "https://webstore.ansi.org/Standards/AAMI/AAMITIR302011TIR30");
+	// standard1.className = "gray-bg";
+	// standard1.width = "1100";
+	// standard1.height = "500";
 	var standard2 = document.createElement("div");
-	item2.appendChild(document.createTextNode('AAMI TIR30:2011 (R2016)'));
-	item2["href"] = "https://webstore.ansi.org/Standards/AAMI/AAMITIR302011R2016";
-	standard2.className = "gray-bg";
-	standard2.width = "1100";
-	standard2.height = "500";
+	var standard2_text = document.createElement("a");
+	standard2_text.appendChild(createTextNode('AAMI TIR30:2011 (R2016)'));
+	standard2_text["href"] = "https://webstore.ansi.org/Standards/AAMI/AAMITIR302011R2016";
+	standard2.appendChild(standard2_text);
+	// standard2.className = "gray-bg";
+	// standard2.width = "1100";
+	// standard2.height = "500";
 	var standard3 = document.createElement("div");
-	item3.appendChild(document.createTextNode('ANSI/AAMI ST79:2010/A1:2010/A2:2011/A3:2012/A4:2013 (ANSI/AAMI ST 79:2010)'));
-	item3["href"] = "https://webstore.ansi.org/Standards/AAMI/ANSIAAMIST792010A1A22011A32012-1510115";
-	standard3.className = "gray-bg";
-	standard3.width = "1100";
-	standard3.height = "500";
+	var standard3_text = document.createElement("a");
+	standard3_text.appendChild(document.createTextNode('ANSI/AAMI ST79:2010/A1:2010/A2:2011/A3:2012/A4:2013 (ANSI/AAMI ST 79:2010)'));
+	standard3_text["href"] = "https://webstore.ansi.org/Standards/AAMI/ANSIAAMIST792010A1A22011A32012-1510115";
+	standard3.appendChild(standard3_text);
+	// standard3.className = "gray-bg";
+	// standard3.width = "1100";
+	// standard3.height = "500";
 	carousel_inner.appendChild(standard1);
 	carousel_inner.appendChild(standard2);
 	carousel_inner.appendChild(standard3);
@@ -84,7 +92,7 @@ function RelatedStandards(){
 	var prev_span = document.createElement("span");
 	prev_span.className = "carousel-control-prev-icon";
 	prev_button.appendChild(prev_span);
-	container.appendChild(prev_button);
+	// container.appendChild(prev_button);
 
 	var next_button = document.createElement("a");
 	next_button.className = "carousel-control-next";
@@ -92,15 +100,15 @@ function RelatedStandards(){
 	var next_span = document.createElement("span");
 	next_button.className = "carousel-control-next-icon";
 	next_button.appendChild(next_span);
-	container.appendChild(next_button);
+	// container.appendChild(next_button);
 	//carousel container end
 
 	var jquery = document.createElement("script");
-	jquery.appendChild(document.createTextNode('$(document).ready(function(){ // Activate Carousel $("#myCarousel").carousel(); // Enable Carousel Indicators $(".item1").click(function(){ $("#myCarousel").carousel(0); }); $(".item2").click(function(){ $("#myCarousel").carousel(1); }); $(".item3").click(function(){ $("#myCarousel").carousel(2); }); // Enable Carousel Controls $(".carousel-control-prev").click(function(){ $("#myCarousel").carousel("prev"); }); $(".carousel-control-next").click(function(){ $("#myCarousel").carousel("next"); }); });'));
+	jquery.appendChild(document.createTextNode('$(document).ready(function(){ $("#myCarousel").carousel(); $(".item1").click(function(){ $("#myCarousel").carousel(0); }); $(".item2").click(function(){ $("#myCarousel").carousel(1); }); $(".item3").click(function(){ $("#myCarousel").carousel(2); }); $(".carousel-control-prev").click(function(){ $("#myCarousel").carousel("prev"); }); $(".carousel-control-next").click(function(){ $("#myCarousel").carousel("next"); }); });'));
 
 	var target_location = document.getElementsByClassName("col-lg-7 g-mb-20 g-pr-0");
 	target_location[0].appendChild(container);
-	target_location[0].appendChild(jquery);
+	// target_location[0].appendChild(jquery);
 }
 
 RelatedStandards();
