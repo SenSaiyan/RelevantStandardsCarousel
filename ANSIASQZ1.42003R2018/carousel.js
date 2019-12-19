@@ -58,24 +58,24 @@ function RelatedStandards(){
 	var carousel_inner = document.createElement("div");
 	var standard1 = document.createElement("div");
 	var standard1_text = document.createElement("a");
-	standard1_text.appendChild(document.createTextNode('')); //replace with first standard sku
-	standard1_text["href"] = ""; //replace with webstore link
+	standard1_text.appendChild(document.createTextNode('ANSI/ASQ Z1.9 2003 (R2018)'));
+	standard1_text["href"] = "https://webstore.ansi.org/Standards/ASQ/ANSIASQZ12003R2018-1726644";
 	standard1.appendChild(standard1_text);
 	// standard1.className = "gray-bg";
 	// standard1.width = "1100";
 	// standard1.height = "500";
 	var standard2 = document.createElement("div");
 	var standard2_text = document.createElement("a");
-	standard2_text.appendChild(document.createTextNode('')); //replace with second standard sku
-	standard2_text["href"] = ""; //replace with webstore link
+	standard2_text.appendChild(document.createTextNode('ISO 10993-1:2018'));
+	standard2_text["href"] = "https://webstore.ansi.org/Standards/ISO/ISO109932018";
 	standard2.appendChild(standard2_text);
 	// standard2.className = "gray-bg";
 	// standard2.width = "1100";
 	// standard2.height = "500";
 	var standard3 = document.createElement("div");
 	var standard3_text = document.createElement("a");
-	standard3_text.appendChild(document.createTextNode('')); //replace with third standard sku
-	standard3_text["href"] = ""; //replace with webstore link
+	standard3_text.appendChild(document.createTextNode('ISO/DIS 14971:2018'));
+	standard3_text["href"] = "https://webstore.ansi.org/Standards/ISO/ISODIS149712018";
 	standard3.appendChild(standard3_text);
 	// standard3.className = "gray-bg";
 	// standard3.width = "1100";

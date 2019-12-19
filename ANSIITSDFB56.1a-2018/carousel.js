@@ -58,24 +58,24 @@ function RelatedStandards(){
 	var carousel_inner = document.createElement("div");
 	var standard1 = document.createElement("div");
 	var standard1_text = document.createElement("a");
-	standard1_text.appendChild(document.createTextNode('')); //replace with first standard sku
-	standard1_text["href"] = ""; //replace with webstore link
+	standard1_text.appendChild(document.createTextNode('ANSI/ITSDF B56.6-2016'));
+	standard1_text["href"] = "https://webstore.ansi.org/Standards/ANSI/ANSIITSDFB562016-1631229";
 	standard1.appendChild(standard1_text);
 	// standard1.className = "gray-bg";
 	// standard1.width = "1100";
 	// standard1.height = "500";
 	var standard2 = document.createElement("div");
 	var standard2_text = document.createElement("a");
-	standard2_text.appendChild(document.createTextNode('')); //replace with second standard sku
-	standard2_text["href"] = ""; //replace with webstore link
+	standard2_text.appendChild(document.createTextNode('ANSI/ITSDF B56.1-2016'));
+	standard2_text["href"] = "https://webstore.ansi.org/Standards/ANSI/ANSIITSDFB562016";
 	standard2.appendChild(standard2_text);
 	// standard2.className = "gray-bg";
 	// standard2.width = "1100";
 	// standard2.height = "500";
 	var standard3 = document.createElement("div");
 	var standard3_text = document.createElement("a");
-	standard3_text.appendChild(document.createTextNode('')); //replace with third standard sku
-	standard3_text["href"] = ""; //replace with webstore link
+	standard3_text.appendChild(document.createTextNode('ANSI/ITSDF B56.11.4-2013'));
+	standard3_text["href"] = "https://webstore.ansi.org/Standards/ANSI/ANSIITSDFB56112013";
 	standard3.appendChild(standard3_text);
 	// standard3.className = "gray-bg";
 	// standard3.width = "1100";
